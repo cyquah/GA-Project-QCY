@@ -33,9 +33,9 @@ The are several notebooks in this directory and the main purpose is to assess th
 The information gathered from the web is be exhaustive. As such, not all food categories and eateries in Singapore will be captured. The gensim summarizer does a quick and good job in summarizing the information. However, there is no control in prioritising what aspects to summarise. 
 
 [data_source]: ../../../tree/master/Capstone-Project/Data-Source-FoodBlogs
-[combine_data]: ../../../tree/master/Capstone-Project/Data-Source-FoodBlogs/FoodBlogs/Combine_allblogs - provide summary - generate wordcloud and ngrams.ipynb
+[combine_data]: ../../../tree/master/Capstone-Project/Data-Source-FoodBlogs/FoodBlogs/Combine_allblogs-provide_summary-generate_wordcloud-ngrams.ipynb
 [ldasa]: ../../../tree/master/Capstone-Project/LDA&Sentiment_Analysis
-[analysis]: ../../../tree/master/Capstone-Project/LDA&Sentiment_Analysis/LDA, Sentiment Analysis - Foodblogs.ipynb
+[analysis]: ../../../tree/master/Capstone-Project/LDA-Sentiment_Analysis-Foodblogs.ipynb
 [yummax]: ../../../tree/master/Capstone-Project/Yummax
 [flask]: ../../../tree/master/Capstone-Project/Yummax/Scripts/Yummax.py
 [html]: ../../../tree/master/Capstone-Project/Yummax/Scripts/templates
