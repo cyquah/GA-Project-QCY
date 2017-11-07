@@ -1,0 +1,131 @@
+.custom-background {
+    background: url('https://static.pexels.com/photos/106877/pexels-photo-106877.jpeg');
+    background-size: cover;
+    height: 710px;
+    width: 100%;
+    opacity: 1;
+}
+
+.title {
+    text-align: center;
+    font-family:sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ 
+.navbar li {
+    margin-left: 160px;
+    display: inline-block;
+    text-align: center;
+}
+    
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.navbar li a.active {
+    background-color: #4CAF50;
+}
+
+.choice {
+    text-align: center;
+    margin-top: 60px;
+   }
+
+.steps {
+    color:purple;
+    background-color:lightyellow;
+    height:60px;
+    padding:10px;
+    border-color: pink;
+    border-style: groove;
+}
+
+.custom-container-border {
+    margin: 3em;
+    padding: 3em;
+    border-style: groove;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 350px;
+    background-color: lightgoldenrodyellow
+}
+
+.custom-container-border h3 {
+    font-family: cursive
+}
+
+
+.container-fluid h2 {
+    text-align: center;
+}
+
+.icon-style {
+    font-size:75px;
+    color:brown;
+    width: 90px;
+    height: 90px
+}
+
+#about {
+   text-align: center; 
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+#contact {
+   text-align: center; 
+   background-color: lightgrey;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+#feedback {
+   text-align: center; 
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+#inputbox {
+    height: 30px;
+    width: 600px;
+    text-align: top;
+}
+
+#copyright {
+   text-align: center; 
+   background-color: aquamarine;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

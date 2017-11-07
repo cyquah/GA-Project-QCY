@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food_Trends</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'food_trends.css')}}">
+   
+</head>
+
+<body>
+    
+<div class="container-fluid title">
+    <h2>Food Trends</h2>    
+    <h3>Keywords : {{ session.pop('topics', [])[0] }}</h3>
+
+    {% for item in session.pop('Topics', [])[0][:5] %}
+        <p>{{ item[1] }}</p>
+    {% endfor %}
+   
+</div>
+     
+</body>
+
+<script src="https://cdn.jsdelivr.net/g/jquery@3.1.0,bootstrap@3.3.7"></script>
+    
+</html>
