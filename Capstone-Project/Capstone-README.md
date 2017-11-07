@@ -13,7 +13,7 @@ The approach used is Topic Modellng using gensim LDA. The topics identified sign
 Key words from food topic or category supplied by user are used to search through the summaries list to identify the relevant ones.
 
 * **Assess opinions of dining options and eateries**
-Dining options and eateries key words supplied by user to select the relevant summaries. Sentiment analysis is then performed with Vader’s sentiment analyzer to determine the sentiment levels with their respective aggregated stats presented.
+Dining options and eateries key words supplied by user to select the relevant summaries. Sentiment analysis is then performed with Vader???s sentiment analyzer to determine the sentiment levels with their respective aggregated stats presented.
 
 ### Directories and Files
 
@@ -32,7 +32,7 @@ The are several notebooks in this directory and the main purpose is to assess th
 ### Limitations 
 The information gathered from the web is be exhaustive. As such, not all food categories and eateries in Singapore will be captured. The gensim summarizer does a quick and good job in summarizing the information. However, there is no control in prioritising what aspects to summarise. 
 
-[data_source]: ../../tree/master/Capstone-Project/Data-Source-FoodBlogs
+[data_source]: ../../../tree/master/Capstone-Project/Data-Source-FoodBlogs
 [combine_data]: ../../../tree/master/Capstone-Project/Data-Source-FoodBlogs/FoodBlogs/Combine_allblogs - provide summary - generate wordcloud and ngrams.ipynb
 [ldasa]: ../../../tree/master/Capstone-Project/LDA&Sentiment_Analysis
 [analysis]: ../../../tree/master/Capstone-Project/LDA&Sentiment_Analysis/LDA, Sentiment Analysis - Foodblogs.ipynb
