@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Food_Trends</title>
+    <title>Food_Topic</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = './css/food_trends.css')}}">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = './css/food_topic.css')}}">
    
 </head>
 
 <body>
     
 <div class="container-fluid title">
-    <h2>Food Trends</h2>  
+    <h2>{{ topic }}</h2>  
     <a href="http://localhost:5000/input" class="btn btn-success">Home</a>  
     <h3>Keywords : {{ session.pop('topics', [])[0] }}</h3>
 

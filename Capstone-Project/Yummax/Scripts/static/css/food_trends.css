@@ -1,0 +1,17 @@
+
+
+.title {
+    text-align: center;
+    font-family:sans-serif;
+}
+
+.container {
+	font-size: 17px;
+	margin-top: 25px;
+}
+
+.container-fluid a {
+	position:fixed;
+    right:170px;
+    top:30px;
+}

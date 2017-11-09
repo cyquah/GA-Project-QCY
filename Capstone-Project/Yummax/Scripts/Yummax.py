@@ -18,28 +18,27 @@ def input():
 
 @app.route('/foodtrend')
 def foodtrend():
-    with open('topics_str.pkl', 'rb') as f:
+    with open('../../LDA&Sentiment_Analysis/topics_str.pkl', 'rb') as f:
         topics_str = pickle.load(f)
 
     session['topics'] = topics_str
 
-    with open ('Topics.pkl', 'rb') as F:
+    with open ('../../LDA&Sentiment_Analysis/Topics.pkl', 'rb') as F:
         Topics = pickle.load(F)
 
     session['Topics'] = Topics
 
     return render_template('food_trends.html')
 
-@app.route('/submit', methods = ['POST', 'GET'])
-def submit():
+@app.route('/topic_submit', methods = ['POST', 'GET'])
+def topic_submit():
     if request.method == 'POST':
-        result = request.form  # dictionary
-        x = result.keys()  # x[0] is duration and x[1] is amount
-        y = result.values()
-        with open('input.csv', 'w') as sm:
-            smwriter = csv.writer(sm, delimiter=' ')
-            smwriter.writerow(y)
-    return redirect(url_for('search'))
+        topic = request.form['topic_query']  
+        topic = topic.title()
+
+        # search for topic in summary - copy form jupyter
+        
+    return render_template('food_topic.html', topic=topic)
 
 if __name__ == '__main__':
     app.run(debug = True)
