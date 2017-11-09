@@ -35,7 +35,7 @@ The information gathered from the web is be exhaustive. As such, not all food ca
 [data_source]: ../../../tree/master/Capstone-Project/Data-Source-FoodBlogs
 [combine_data]: ../../../tree/master/Capstone-Project/Data-Source-FoodBlogs/FoodBlogs/Combine_allblogs-provide_summary-generate_wordcloud-ngrams.ipynb
 [ldasa]: ../../../tree/master/Capstone-Project/LDA&Sentiment_Analysis
-[analysis]: ../../../tree/master/Capstone-Project/LDA-Sentiment_Analysis-Foodblogs.ipynb
+[analysis]: ../../../tree/master/Capstone-Project/LDA&Sentiment_Analysis/LDA-Sentiment_Analysis-Foodblogs.ipynb
 [yummax]: ../../../tree/master/Capstone-Project/Yummax
 [flask]: ../../../tree/master/Capstone-Project/Yummax/Scripts/Yummax.py
 [html]: ../../../tree/master/Capstone-Project/Yummax/Scripts/templates
