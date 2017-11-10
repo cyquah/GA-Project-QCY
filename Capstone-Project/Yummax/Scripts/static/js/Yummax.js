@@ -14,6 +14,22 @@ function submit_toggle() {
     x.style.display = "block";
 }
 
+function but_toggle() {
+    var a = document.getElementById("sift");
+    var b = document.getElementById("form_dining");
+    
+    a.style.display = "none";
+    b.style.display = "block";
+}
+
+function sub_toggle() {
+    var a = document.getElementById("sift");
+    var b = document.getElementById("form_dining");
+    
+    b.style.display = "none";
+    a.style.display = "block";
+}
+
 function initMap() {
     var dsi = {lat: 1.3077, lng: 103.8318};
     var map = new google.maps.Map(document.getElementById('map'), {

@@ -8,6 +8,8 @@
 .container {
 	font-size: 17px;
 	margin-top: 25px;
+	background-color: mistyrose;
+	padding-top: 20px;
 }
 
 .container-fluid a {

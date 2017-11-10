@@ -3,27 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Food_Topic</title>
+    <title>Feedback</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = './css/food_topic.css')}}">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = './css/feedback.css')}}">
    
 </head>
 
 <body>
     
-<div style="background-color:seashell" class="container-fluid title">
-    <h2 style="color:maroon; font-family:cursive">{{ topic }}</h2>  
-    <a href="http://localhost:5000/input" class="btn btn-success">Home</a>  
-
-    <div class="container">
-        {% for item in session.pop('topic_ls', [])[:5] %}
-            <p>{{ item }}</p><br>
-        {% endfor %}
-    </div>
-   
+<div class="container-fluid title">
+    <h2 style="font-family:cursive">Thank You for your Feedback !</h2>  
+    <a href="http://localhost:5000/input" class="btn btn-success">Home</a>     
 </div>
      
 </body>

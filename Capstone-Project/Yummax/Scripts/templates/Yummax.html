@@ -40,7 +40,7 @@
                     <a href="http://localhost:5000/foodtrend"><img class="icon-style" src={{ url_for('static', filename='./icons/plate-fork-and-knife.svg') }} alt='plate-fork-and-knife'></a>
                     <h3 class="text-center" style="color:blue">Current<br>Food Trends</h3>
                     <h4 class="text-center">What's in, What's out, What's hot, What's not</h4>
-                    <a href="http://localhost:5000/foodtrend" class="btn btn-primary">Discover</a>
+                    <a href="http://localhost:5000/foodtrend" class="btn btn-primary">D i s c o v e r</a>
                 </div>
 
             </div>
@@ -51,8 +51,8 @@
                     <a href="#"><img class="icon-style" src={{ url_for('static', filename='./icons/meat.svg') }} alt='meat' ></a>
                     <h3 class="text-center" style="color:brown">Food Category<br>Gossips</h3>
                     <h4 class="text-center">Best Laksa ? Wagyu Steak ? Tortilla Espanola ?</h4>
-                    <a id="explore" onclick="button_toggle()" class="btn btn-warning">Explore</a>
-                    <form action="topic_submit" id="form" style="display:none">
+                    <a id="explore" onclick="button_toggle()" class="btn btn-warning">E x p l o r e</a>
+                    <form action="http://localhost:5000/topic_submit" method="post" id="form" style="display:none">
                       <input type="text" name="topic_query" placeholder='food topic or category'><br><br>
                       <input type="submit" value="Submit" style="color:blue" onclick="submit_toggle">
                     </form>
@@ -67,7 +67,11 @@
                     <a href="#"><img class="icon-style" src={{ url_for('static', filename='./icons/store.svg') }} alt='store'></a>
                     <h3 class="text-center" style="color:green">Restaurant/Cafe<br>Chats</h3>
                     <h4 class="text-center">Fine Dining, Casual, Family, Rising M Stars</h4>
-                    <a href="#" class="btn btn-success">Sift</a>
+                    <a id="sift" onclick="but_toggle()" class="btn btn-success">S i f t</a>
+                    <form action="http://localhost:5000/dining_submit" method="post" id="form_dining" style="display:none">
+                      <input type="text" name="dining_query" placeholder='dining option or eatery'><br><br>
+                      <input type="submit" value="Submit" style="color:brown" onclick="sub_toggle">
+                    </form>
                 </div>
 
             </div>
@@ -112,8 +116,8 @@
 <div class="container-fluid" id="feedbackus">
     
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <form action="" id="feedback" >
-          <input id="inputbox" type="text" name="feedback" placeholder='feedback'><br><br>
+        <form action="http://localhost:5000/feedback" method="post" id="feedback">
+          <input id="inputbox" type="text" name="feedback_input" placeholder='feedback'><br><br>
           <input type="submit" value="Submit" style="margin-left:260px">
         </form>
     </div>  
