@@ -1,0 +1,13 @@
+
+
+.title {
+    text-align: center;
+    font-family:sans-serif;
+    padding-top: 15px;
+}
+
+.container-fluid a {
+	position:fixed;
+    right:170px;
+    top:30px;
+}

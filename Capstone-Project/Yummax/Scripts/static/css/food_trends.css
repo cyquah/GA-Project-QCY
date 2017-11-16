@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+    font-family:sans-serif;
+}
+
+.container {
+	font-size: 17px;
+	margin-top: 25px;
+	background-color: mistyrose;
+	padding-top: 20px;
+}
+
+.container-fluid a {
+	position: absolute;
+    right: 170px;
+    top: 30px;
+}
+
+.carousel {
+	text-align: center;
+}
+
+.carousel-inner h3 {
+	color: orangered;
+}
+
+.item {
+	height: 715px;
+	width: 100%;
+}

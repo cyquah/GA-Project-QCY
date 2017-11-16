@@ -1,0 +1,19 @@
+
+
+.title {
+    text-align: center;
+    font-family:sans-serif;
+}
+
+.container {
+	font-size: 17px;
+	margin-top: 10px;
+	padding-top: 20px;
+	background-color: azure;
+}
+
+.home {
+	position: absolute;
+    right: 170px;
+    top: 30px;
+}

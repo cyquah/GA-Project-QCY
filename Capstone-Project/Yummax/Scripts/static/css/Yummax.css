@@ -1,0 +1,205 @@
+.background-run {
+    background-image: url('../images/food-background.jpeg');
+    height: 0px;
+    width: 0%;
+    animation-name: main-background;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.main-background {
+    background-image: url('../images/food-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 710px;
+    width: 100%;
+    animation-name: main-background;
+    animation-duration: 100s;
+    animation-iteration-count: 1;
+}
+
+@keyframes main-background {
+    0%   {background-image: url('../images/food-background.jpeg')}
+    10%  {background-image: url('../images/castle.jpg')}
+    20%  {background-image: url('../images/hummingbird.jpg')}
+    30%  {background-image: url('../images/pan-food.jpg')}
+    40%  {background-image: url('../images/bread-on-block.jpg')}
+    50%  {background-image: url('../images/classy.jpg')}
+    60%  {background-image: url('../images/dim-sum-crab.jpg')}
+    70%  {background-image: url('../images/donuts.jpg')}
+    80%  {background-image: url('../images/tea.jpg')}
+    90%  {background-image: url('../images/tom-yum.jpg')}
+    100% {background-image: url('../images/food-background.jpeg')}
+}
+
+.custom-background {
+    background: url('https://static.pexels.com/photos/106877/pexels-photo-106877.jpeg');
+    background-size: cover;
+    height: 710px;
+    width: 100%;
+    opacity: 1;
+}
+
+.title {
+    text-align: center;
+    font-family: cursive;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ 
+.navbar li {
+    margin-left: 160px;
+    display: inline-block;
+    text-align: center;
+}
+    
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.navbar li a.active {
+    background-color: #4CAF50;
+}
+
+.choice {
+    text-align: center;
+    margin-top: 60px;
+   }
+
+.steps {
+    color:purple;
+    background-color:lightyellow;
+    height:60px;
+    padding:10px;
+    border-color: pink;
+    border-style: groove;
+}
+
+.custom-container-border {
+    margin: 3em;
+    padding: 3em;
+    border-style: groove;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 350px;
+    background-color: lightgoldenrodyellow
+}
+
+.custom-container-border h3 {
+    font-family: cursive;
+}
+
+
+.container-fluid h2 {
+    text-align: center;
+}
+
+.icon-style {
+    width: 90px;
+    height: 90px
+}
+
+#about {
+   text-align: center; 
+   margin-top: 30px;
+   margin-bottom: 30px;
+   font-size: 17px;
+}
+
+#contact {
+   margin-top: 50px;
+   margin-left: 50px;
+   font-size: 17px;
+}
+
+.map {
+  background-color: mintcream;
+}
+
+#map {
+  height: 400px;
+  width: 400px;
+  margin-left: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-style: groove;
+}
+
+#feedback {
+   text-align: center; 
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+#inputbox {
+    height: 30px;
+    width: 600px;
+    text-align: top;
+}
+
+#copyright {
+   text-align: center; 
+   background-color: aquamarine;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   }
+
+#ltebp {
+  height: 270px;
+  width: 350px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+#fnf {
+  height: 300px;
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+#gtdf {
+  height: 300px;
+  width: 300px;
+  margin-left: 200px;
+  margin-top: 25px;
+}
+
+#feedback {
+  margin-left: 300px;
+  margin-top: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

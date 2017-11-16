@@ -1,0 +1,24 @@
+
+.container-fluid {
+    text-align: center;
+    font-family: Atma;
+    font-size: 35px;
+    color: indigo;
+    margin-top: 15px;
+}
+
+#login_form {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+#wwwy {
+	height: 500px;
+	width: 500px;
+	border: 2px solid #021a40;
+	margin-top: 10px;
+}
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yummax</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type = "text/css" href="{{url_for('static', filename = './css/Yummax.css')}}">
+
+    <script src={{ url_for('static', filename = './js/Yummax.js') }}></script>
+    
+</head>
+
+<body>
+    
+<div class="container title">
+    <h1>Y u m m a x</h1>    
+    <h4>T h e &ensp; U l t i m a t e &ensp; S m a r t &ensp; F o o d &ensp; P o r t a l</h4>
+</div>
+
+<div class="background-run"></div>
+ 
+<div class="container main-background">
+
+    <div class="container-fluid">
+
+            <div class="container navbar">
+                <ul>
+                  <li><a class="active" href="http://localhost:5000/input">Home</a></li>
+                  <li><a href="#aboutus">About Us</a></li>
+                  <li><a href="#contactus">Contact</a></li>
+                  <li><a href="#feedbackus">Feedback</a></li>
+                </ul>
+            </div>
+       
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+                <div class="custom-container-border">
+                    <a href="http://localhost:5000/foodtrend"><img class="icon-style" src={{ url_for('static', filename='./icons/plate-fork-and-knife.svg') }} alt='plate-fork-and-knife'></a>
+                    <h3 class="text-center" style="color:blue">Current<br>Food Trends</h3>
+                    <h4 class="text-center">What's in, What's out, What's hot, What's not</h4>
+                    <a href="http://localhost:5000/foodtrend" class="btn btn-primary">D i s c o v e r</a>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                
+                <div class="custom-container-border">
+                    <img class="icon-style" src={{ url_for('static', filename='./icons/meat.svg') }} alt='meat' >
+                    <h3 class="text-center" style="color:brown">Food Category<br>Gossips</h3>
+                    <h4 class="text-center">Best Laksa ? Wagyu Steak ? Tortilla Espanola ?</h4>
+                    <a id="explore" onclick="button_toggle()" class="btn btn-warning">E x p l o r e</a>
+                    <form action="http://localhost:5000/topic_submit" method="post" id="form" style="display:none">
+                      <input type="text" name="topic_query" placeholder='food topic or category'><br><br>
+                      <input type="submit" value="Submit" style="color:blue" onclick="submit_toggle()">
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+                <div class="custom-container-border">
+                    <img class="icon-style" src={{ url_for('static', filename='./icons/store.svg') }} alt='store'>
+                    <h3 class="text-center" style="color:green">Restaurant/Cafe<br>Chats</h3>
+                    <h4 class="text-center">Fine Dining, Casual, Family, Rising M Stars</h4>
+                    <a id="sift" onclick="but_toggle()" class="btn btn-success">S i f t</a>
+                    <form action="http://localhost:5000/dining_submit" method="post" id="form_dining" style="display:none">
+                      <input type="text" name="dining_query" placeholder='dining option or eatery'><br><br>
+                      <input type="submit" value="Submit" style="color:brown" onclick="sub_toggle()">
+                    </form>
+                </div>
+
+            </div>
+
+    </div>      
+       
+</div>
+
+ <div class="container-fluid" id="aboutus">
+    
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img id="ltebp" class="icon-style" src={{ url_for('static', filename='./images/miso-udon.jpg') }} alt='miso-udon'>
+    </div>
+
+    <div id="about" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <h3 style="font-family:cursive">About Us</h3>
+        <p>We are a bunch of food crazyists that live to eat, nothing else matters</p>
+        <p>Keen to know what is happening in the Singapore food scene but too lazy to move around</p>
+        <p>That's the sole reason for this website to exist</p>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img id="fnf" class="icon-style" src={{ url_for('static', filename='./images/food-nofood.jpg') }} alt='food-nofood'>
+    </div>
+
+</div>
+
+<div class="container-fluid map" id="contactus">
+
+    <div id="map" class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+    
+    <div id="contact" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <h3 style="font-family:cursive">Here is where you can find us</h3>
+        <p>88, Little Pony Road, DSI Centre</p>
+        <p>Level 3, Classroom 3</p>
+        <p>Singapore 318181</p>
+        <p>Tel : 12881688</p>
+    </div>   
+
+</div> 
+
+<div class="container-fluid" id="feedbackus">
+    
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <form action="http://localhost:5000/feedback" method="post" id="feedback">
+          <input id="inputbox" type="text" name="feedback_input" placeholder='feedback'><br><br>
+          <input type="submit" value="Submit" style="margin-left:260px">
+        </form>
+    </div>  
+
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">    
+        <img id="gtdf" class="icon-style" src={{ url_for('static', filename='./images/gimme-the-dish-feedback.png') }} alt='gimme-the-dish-feedback'>
+    </div>
+
+</div>
+
+<div id="copyright">
+    <p>Copyright @ 2017 All Rights Reserved. <span style="color:brown">Yummax Inc.</span>
+</div> 
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/g/jquery@3.1.0,bootstrap@3.3.7"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByQvzKaTxO94WyL3M6lBNVNPoy2-riYXc&callback=initMap"></script>
+    
+</html>
