@@ -1,5 +1,3 @@
-
-
 .title {
     text-align: center;
     font-family:sans-serif;
@@ -13,7 +11,20 @@
 }
 
 .container-fluid a {
-	position:fixed;
-    right:170px;
-    top:30px;
+	position: absolute;
+    right: 170px;
+    top: 30px;
+}
+
+.carousel {
+	text-align: center;
+}
+
+.carousel-inner h3 {
+	color: orangered;
+}
+
+.item {
+	height: 715px;
+	width: 100%;
 }

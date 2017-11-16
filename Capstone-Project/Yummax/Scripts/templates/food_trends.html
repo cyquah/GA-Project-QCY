@@ -15,20 +15,226 @@
 <body>
     
 <div class="container-fluid title">
-    <h2 style="color:indigo; font-family:cursive">Food Trends</h2>  
+    <h1 style="color:indigo; font-family:cursive">Food Trends</h1>  
     <a href="http://localhost:5000/input" class="btn btn-success">Home</a>  
-    <h3 style="color:lightseagreen">Keywords : {{ session.pop('topics', [])[0] }}</h3>
+</div>    
 
-    <div class="container">
-        {% for item in session.pop('Topics', [])[0][:5] %}
-            <p>{{ item[1] }}</p><br>
-        {% endfor %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+    <ol class="carousel-indicators" style="color:black">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+    </ol> 
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        
+        <div class="item active">
+            <h3>Trend 1</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][0] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][0])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][0][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][0][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 2</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][1] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][1])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][1][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][1][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 3</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][2] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][2])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][2][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][2][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 4</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][3] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][3])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][3][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][3][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 5</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][4] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][4])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][4][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][4][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 6</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][5] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][5])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][5][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][5][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 7</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][6] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][6])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][6][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][6][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 8</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][7] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][7])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][7][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][7][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Trend 9</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session['topics'][8] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][8])|length %}
+                {% if i < 5 %}
+                    {% for item in session['Topics'][8][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session['Topics'][8][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>    
+
+        <div class="item">
+            <h3>Trend 10</h3>
+            <h3 style="color:sienna">Buzzwords : {{ session.pop('topics', [])[9] }}</h3>
+            <div class="container">
+                {% set i = (session['Topics'][9])|length %}
+                {% if i < 5 %}
+                    {% for item in session.pop('Topics', [])[9][:i] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% else %}
+                    {% for item in session.pop('Topics', [])[9][:4] %}
+                    <p>{{ item[1] }}</p><br>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        
+        </div>
+
     </div>
-   
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
 </div>
-     
+        
 </body>
 
 <script src="https://cdn.jsdelivr.net/g/jquery@3.1.0,bootstrap@3.3.7"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var mCarouselTO = setTimeout(function(){
+            $('#myCarousel').carousel({
+                interval: 3000,
+                cycle: true
+            }).trigger('slide');
+        }, 2000);
+        var q = mCarouselTO;
+    });
+</script>
     
 </html>

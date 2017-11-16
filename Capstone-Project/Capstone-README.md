@@ -1,8 +1,8 @@
 ## Capstone Project 
 
 ### Introduction
-This project relates to the food scene in Singapore. Rather than having to search through multiple food websites to find out what is happening, it provides a consolidated platform whereby aggregated web information can be obtained in a summarised form.
-amazon
+This project relates to the food scene in Singapore and the Asia region. Rather than having to search through multiple food websites to find out what is happening, it provides a consolidated platform whereby aggregated web information can be obtained in a summarised form.
+
 ### Objectives and Approach
 The project aims to fulfill 3 objectives:
 
@@ -13,7 +13,7 @@ The approach used is Topic Modellng using gensim LDA. The topics identified sign
 Key words from food topic or category supplied by user are used to search through the summaries list to identify the relevant ones.
 
 * **Assess opinions of dining options and eateries**
-Dining options and eateries key words supplied by user to select the relevant summaries. Sentiment analysis is then performed with Vader???s sentiment analyzer to determine the sentiment levels with their respective aggregated stats presented.
+Dining options and eateries key words supplied by user to select the relevant summaries. Sentiment analysis is then performed with Vader sentiment analyzer to determine the sentiment levels with their respective aggregated stats presented.
 
 ### Directories and Files
 * [**Data Source - FoodBlogs**][data_source]

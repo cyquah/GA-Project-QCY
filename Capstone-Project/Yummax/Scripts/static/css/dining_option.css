@@ -1,17 +1,30 @@
 
-
 .title {
-    text-align: center;
-    font-family:sans-serif;
+	text-align: center;
 }
 
-.container {
-	font-size: 17px;
+.title a {
+	position: absolute;
+    right: 170px;
+    top: 30px;
+}
+
+.container-fluid {
+	text-align: center;
+}
+
+.icon-style {
+    width: 90px;
+    height: 90px
+}
+
+.sent_percent {
+	font-size: 40px;
 	margin-top: 25px;
 }
 
-.container-fluid a {
-	position:fixed;
-    right:170px;
-    top:30px;
+.sent_sum {
+	padding-top: 10px;
 }
+
+

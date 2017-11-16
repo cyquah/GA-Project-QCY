@@ -17,11 +17,13 @@
 <body>
     
 <div class="container title">
-    <h2>Y u m m a x</h2>    
+    <h1>Y u m m a x</h1>    
     <h4>T h e &ensp; U l t i m a t e &ensp; S m a r t &ensp; F o o d &ensp; P o r t a l</h4>
 </div>
+
+<div class="background-run"></div>
  
-<div class="container custom-background">
+<div class="container main-background">
 
     <div class="container-fluid">
 
@@ -48,13 +50,13 @@
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 
                 <div class="custom-container-border">
-                    <a href="#"><img class="icon-style" src={{ url_for('static', filename='./icons/meat.svg') }} alt='meat' ></a>
+                    <img class="icon-style" src={{ url_for('static', filename='./icons/meat.svg') }} alt='meat' >
                     <h3 class="text-center" style="color:brown">Food Category<br>Gossips</h3>
                     <h4 class="text-center">Best Laksa ? Wagyu Steak ? Tortilla Espanola ?</h4>
                     <a id="explore" onclick="button_toggle()" class="btn btn-warning">E x p l o r e</a>
                     <form action="http://localhost:5000/topic_submit" method="post" id="form" style="display:none">
                       <input type="text" name="topic_query" placeholder='food topic or category'><br><br>
-                      <input type="submit" value="Submit" style="color:blue" onclick="submit_toggle">
+                      <input type="submit" value="Submit" style="color:blue" onclick="submit_toggle()">
                     </form>
 
                 </div>
@@ -64,13 +66,13 @@
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
                 <div class="custom-container-border">
-                    <a href="#"><img class="icon-style" src={{ url_for('static', filename='./icons/store.svg') }} alt='store'></a>
+                    <img class="icon-style" src={{ url_for('static', filename='./icons/store.svg') }} alt='store'>
                     <h3 class="text-center" style="color:green">Restaurant/Cafe<br>Chats</h3>
                     <h4 class="text-center">Fine Dining, Casual, Family, Rising M Stars</h4>
                     <a id="sift" onclick="but_toggle()" class="btn btn-success">S i f t</a>
                     <form action="http://localhost:5000/dining_submit" method="post" id="form_dining" style="display:none">
                       <input type="text" name="dining_query" placeholder='dining option or eatery'><br><br>
-                      <input type="submit" value="Submit" style="color:brown" onclick="sub_toggle">
+                      <input type="submit" value="Submit" style="color:brown" onclick="sub_toggle()">
                     </form>
                 </div>
 
@@ -83,7 +85,7 @@
  <div class="container-fluid" id="aboutus">
     
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <img id="ltebp" class="icon-style" src={{ url_for('static', filename='./images/love-to-eat-best-people.jpg') }} alt='love-to-eat-best-people'>
+        <img id="ltebp" class="icon-style" src={{ url_for('static', filename='./images/miso-udon.jpg') }} alt='miso-udon'>
     </div>
 
     <div id="about" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">

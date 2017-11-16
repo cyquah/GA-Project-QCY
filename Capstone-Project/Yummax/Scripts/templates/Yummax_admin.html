@@ -19,10 +19,19 @@
     
 <div class="container-fluid">
 
-    <a href="http://localhost:5000/input"><img src={{ url_for('static', filename='./images/yummax-screenshot.png') }} alt='yummax-screenshot'></a>
+    <a href="http://localhost:5000/input"><img src={{ url_for('static', filename='./images/yummax-screenshot.png') }} alt='yummax-screenshot'></a>   
     <p>For those who are serious about the business of food</p>
     <h4 style="color:brown">Click on banner to continue</h4>
 
+    <div class="container">
+        <a id="login" onclick="show_login()" class="btn btn-success">Admin Login</a>
+        <form action="http://localhost:5000/login" method="post" id="login_form" style="display:none">
+            <input type="text" name="username" placeholder='username'>
+            <input type="password" name="password" placeholder='password'>
+            <input type="submit" value="Submit" style="color:blue">
+        </form>
+    </div>
+    
     <div>
         <img id="wwwy" src={{ url_for('static', filename='./images/we-will-wok-you.jpg') }} alt='we-will-wok-you'>
     </div>

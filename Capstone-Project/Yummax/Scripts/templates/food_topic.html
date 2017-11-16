@@ -9,17 +9,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = './css/food_topic.css')}}">
+
+    <script src={{ url_for('static', filename = './js/food_topic.js') }}></script>
    
 </head>
 
 <body>
     
 <div style="background-color:seashell" class="container-fluid title">
-    <h2 style="color:maroon; font-family:cursive">{{ topic }}</h2>  
-    <a href="http://localhost:5000/input" class="btn btn-success">Home</a>  
+    <h1 style="color:maroon; font-family:cursive">{{ topic }}</h1>  
+    <a href="http://localhost:5000/input" class="btn btn-success home">Home</a>  
+    <a id="show" onclick="show_toggle()" class="btn btn-info">Show More</a> 
 
-    <div class="container">
-        {% for item in session.pop('topic_ls', [])[:5] %}
+    <div id="firstfive" class="container">
+        {% for item in session['topic_ls'][:5] %}
+            <p>{{ item }}</p><br>
+        {% endfor %}
+    </div>
+
+    <div id="nextten" class="container" style="display:none">
+        {% for item in session.pop('topic_ls', [])[5:15] %}
             <p>{{ item }}</p><br>
         {% endfor %}
     </div>

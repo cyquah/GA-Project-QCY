@@ -14,18 +14,65 @@
 
 <body>
     
-<div class="container-fluid title">
-    <h2>{{ dining }}</h2>  
+<div class="title">
+    <h1 style="color:purple; font-family:cursive">{{ dining }}</h1>  
     <a href="http://localhost:5000/input" class="btn btn-success">Home</a>  
 
-<div class="container">
-    {% for item in session.pop('dining_ls', [])[0][:5] %}
-        <p>{{ item[1] }}</p><br>
-    {% endfor %}
+    <div class="container-fluid sent_percent">    
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+            <img class="icon-style" src={{ url_for('static', filename='./images/yummy-emoji.jpg') }} alt='yummy'>
+            <p class="text-center" style="color:blue">{{ pos_percent }}%</p>   
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="icon-style" src={{ url_for('static', filename='./images/neutral.jpg') }} alt='neutral' >
+            <p class="text-center" style="color:brown">{{ neu_percent }}%</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="icon-style" src={{ url_for('static', filename='./images/yucky.jpeg') }} alt='yucky'>
+            <p class="text-center" style="color:green">{{ neg_percent }}%</p> 
+        </div>   
+
+    </div>
+
+    <div class="container-fluid">    
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sent_sum" style="background-color:aliceblue">
+            {% if session['pos']: %}
+                {% for item in session.pop('pos', [])[:5] %}
+                <p>{{ item }}</p><br>
+                {% endfor %}
+            {% else: %}
+                <p>No snippets found !</p>
+            {% endif %}
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sent_sum" style="background-color:mistyrose">
+            {% if session['neu']: %}
+                {% for item in session.pop('neu', [])[:5] %}
+                <p>{{ item }}</p><br>
+                {% endfor %}
+            {% else: %}
+                <p>No snippets found !</p>
+            {% endif %}
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 sent_sum" style="background-color:honeydew">
+            {% if session['neg']: %}
+                {% for item in session.pop('neg', [])[:5] %}
+                <p>{{ item }}</p><br>
+                {% endfor %}
+            {% else: %}
+                <p>No snippets found !</p>
+            {% endif %}
+        </div>   
+        
+    </div>
+
 </div>
-   
-</div>
-     
+    
 </body>
 
 <script src="https://cdn.jsdelivr.net/g/jquery@3.1.0,bootstrap@3.3.7"></script>

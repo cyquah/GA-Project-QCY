@@ -7,13 +7,13 @@
 
 .container {
 	font-size: 17px;
-	margin-top: 25px;
+	margin-top: 10px;
 	padding-top: 20px;
 	background-color: azure;
 }
 
-.container-fluid a {
-	position:fixed;
-    right:170px;
-    top:30px;
+.home {
+	position: absolute;
+    right: 170px;
+    top: 30px;
 }
