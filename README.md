@@ -1,4 +1,4 @@
-## Capstone Project - [Yummax][yummax]
+## Capstone Project - [Yummax](http://54.251.140.14)
 
 ### Introduction
 This project relates to the food scene in Singapore and the Asia region. Rather than having to search through multiple food websites to find out what is happening, it provides a consolidated platform whereby aggregated web information can be obtained in a summarised form.
@@ -40,4 +40,3 @@ The information gathered from the web is be exhaustive. As such, not all food ca
 [html]: ../../../tree/master/Capstone-Project/Yummax/Scripts/templates
 [cssjs]: ../../../tree/master/Capstone-Project/Yummax/Scripts/static
 [amazon]: ../../../tree/master/Capstone-Project/Amazon-Food-Review
-[yummax]: http://54.251.140.14
